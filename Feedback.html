@@ -1,0 +1,200 @@
+<html lang="en"><head>
+    
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body {
+  padding: 50px;
+}
+form .stars {
+  background: url("stars.png") repeat-x 0 0;
+  width: 150px;
+  margin: 0 auto;
+}
+
+form .stars input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+form .stars input[type="radio"].star-5:checked ~ span {
+  width: 100%;
+}
+form .stars input[type="radio"].star-4:checked ~ span {
+  width: 80%;
+}
+form .stars input[type="radio"].star-3:checked ~ span {
+  width: 60%;
+}
+form .stars input[type="radio"].star-2:checked ~ span {
+  width: 40%;
+}
+form .stars input[type="radio"].star-1:checked ~ span {
+  width: 20%;
+}
+form .stars label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0!important;
+  padding: 0!important;
+  text-indent: -999em;
+  float: left;
+  position: relative;
+  z-index: 10;
+  background: transparent!important;
+  cursor: pointer;
+}
+form .stars label:hover ~ span {
+  background-position: 0 -30px;
+}
+form .stars label.star-5:hover ~ span {
+  width: 100% !important;
+}
+form .stars label.star-4:hover ~ span {
+  width: 80% !important;
+}
+form .stars label.star-3:hover ~ span {
+  width: 60% !important;
+}
+form .stars label.star-2:hover ~ span {
+  width: 40% !important;
+}
+form .stars label.star-1:hover ~ span {
+  width: 20% !important;
+}
+form .stars span {
+  display: block;
+  width: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 30px;
+  background: url("stars.png") repeat-x 0 -60px;
+  -webkit-transition: -webkit-width 0.5s;
+  -moz-transition: -moz-width 0.5s;
+  -ms-transition: -ms-width 0.5s;
+  -o-transition: -o-width 0.5s;
+  transition: width 0.5s;
+}
+
+
+
+#success_message{ display: none;}
+    </style>
+
+
+</head>
+<body>
+
+
+
+    <form class="well form-horizontal" action=" " method="post" id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend align="center"><h2>Feedback</h2></legend>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">First Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="first_name" placeholder="First Name" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Last Name</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-4 control-label">Phone #</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Comments</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+<textarea class="form-control" rows="5" cols="54" id="comment"></textarea>
+    </div>
+  </div>
+</div>
+
+
+
+
+  
+
+
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+
+ 
+	<div class="stars">
+		<input type="radio" name="star" class="star-1" id="star-1">
+		<label class="star-1" for="star-1">1</label>
+		<input type="radio" name="star" class="star-2" id="star-2">
+		<label class="star-2" for="star-2">2</label>
+		<input type="radio" name="star" class="star-3" id="star-3">
+		<label class="star-3" for="star-3">3</label>
+		<input type="radio" name="star" class="star-4" id="star-4">
+		<label class="star-4" for="star-4">4</label>
+		<input type="radio" name="star" class="star-5" id="star-5">
+		<label class="star-5" for="star-5">5</label>
+		<span></span>
+	</div>
+  
+
+
+
+
+<!-- Button -->
+<div class="form-group" align="center">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-primary">Send <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset></form>
+
+   
+</body></html>
