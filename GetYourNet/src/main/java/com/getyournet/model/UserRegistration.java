@@ -8,6 +8,7 @@ public class UserRegistration {
 	private String locality;
 	private String city;
 	private String state;
+	private String country;
 	private long mobileNumber;
 	private int pincode;
 	
@@ -51,7 +52,13 @@ public class UserRegistration {
 	public void setState(String state) {
 		this.state = state;
 	}
-		public long getMobileNumber() {
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	public long getMobileNumber() {
 		return mobileNumber;
 	}
 	public void setMobileNumber(long mobileNumber) {

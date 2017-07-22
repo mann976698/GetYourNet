@@ -17,6 +17,7 @@
  <!--  <script src="resources/js/validation.js"></script> -->
 </head>
 <body>
+<form:form action="success" modelAttribute="user">
 <h3>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -66,7 +67,7 @@
     <div class="Absolute-Center is-Responsive"> 
       <div class="col-sm-12 col-md-10 col-md-offset-1">
         
-  <form:form action="success" modelAttribute ="userregistration">
+  <form:form action="" modelAttribute ="userregistration">
           <div class="form-group input-group">
       <label for="name">Name:</label>
       <form:input  class="form-control" path="name" placeholder="Enter name" required="true"/>
@@ -138,5 +139,6 @@
         </div>
     </div>
     </footer>
+</form:form>
 </body>
 </html>

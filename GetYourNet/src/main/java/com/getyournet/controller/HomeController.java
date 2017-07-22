@@ -1,9 +1,9 @@
 package com.getyournet.controller;
 
 
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 
@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.getyournet.dao.GetYourNetDao;
+import com.getyournet.dao.GetYourNetDaoImp;
 import com.getyournet.model.AdminRegistration;
 import com.getyournet.model.ClientRegistration;
 import com.getyournet.model.UserLoginClass;
@@ -29,7 +30,7 @@ public class HomeController {
 
 	
 	
-	GetYourNetDao dao;
+	static GetYourNetDao dao = new GetYourNetDaoImp();
 	
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
@@ -40,7 +41,7 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/UserRegistration", method = RequestMethod.GET)
-	public String Reg(@ModelAttribute("userregistration") UserRegistration ureg, Model model) {
+	public String Reg(@ModelAttribute UserRegistration ureg, Model model) {
 		logger.debug("Load user registration page");
 		model.addAttribute("userregistration", ureg);
 		return "UserRegistration";
@@ -48,30 +49,25 @@ public class HomeController {
 	
 	
 	
-//	@RequestMapping(value = "/UserRegistrationSuccess", method = RequestMethod.POST)
-//	public String RegistrationSuccess(@ModelAttribute UserRegistration ureg, Model model) {
-//		logger.debug("hello");
-//		
-//		boolean isRegister = dao.userRegistration(ureg);
-//		if(isRegister) {
-//			return "home";
-//		}
-//		return "fail";
-//		
-//	}
-	
-	@RequestMapping(value = "/success", method = RequestMethod.POST)
-	public String success(@ModelAttribute("userregistration") UserRegistration ureg) {
-		logger.debug("hello world");
-		System.out.println("hello" + ureg.getName()+ureg.getEmail());
-		logger.debug(ureg.getName());
+	/*@RequestMapping(value = "/UserRegistrationSuccess", method = RequestMethod.POST)
+	public String RegistrationSuccess(@ModelAttribute UserRegistration ureg, Model model) {
+		logger.debug("hello");
 		
 		boolean isRegister = dao.userRegistration(ureg);
 		if(isRegister) {
 			return "home";
 		}
 		return "fail";
-		//return "success";
+		
+	}*/
+	
+	@RequestMapping(value = "/success", method = RequestMethod.POST)
+	public String success(@ModelAttribute("user") UserRegistration ureg) {
+		logger.debug("hello world");
+		System.out.println("hello" + ureg.getName());
+		logger.debug(ureg.getName());
+		dao.userRegistration(ureg);
+		return "home";
 	}
 	
 	@RequestMapping(value = "/LoggedUser", method = RequestMethod.GET)
@@ -87,12 +83,12 @@ public class HomeController {
 	}
 	
 
-	@RequestMapping(value = "/ClientRegistration", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/ClientRegistration", method = RequestMethod.GET)
 	public String Reg(@ModelAttribute ClientRegistration creg, Model model) {
 		logger.debug("hello");
 		model.addAttribute("client", creg);
 		return "ClientRegistration";
-	}
+	}*/
 
 	@RequestMapping(value = "/LoggedClient", method = RequestMethod.POST)
 	public String LoggedClient() {
