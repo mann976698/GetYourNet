@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="User.css" rel="stylesheet" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="validationInsertPlan.js"></script>   
+</head>
+<body>
+<h3>
+<body id="body" data-spy="scroll" data-target=".header">
+
+
+          <header class="header navbar-fixed-top">
+              <nav class="navbar" role="navigation">
+                <div class="container">
+                      <div class="menu-container js_nav-item">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
+
+                          <!--<div class="logo">
+                            <a class="logo-wrap" href="#body">
+                                <img class="logo-img logo-img-main" src="log_burned.png" alt="FlameOnePage Logo">
+                                
+                            </a>
+                        </div>-->
+                    </div>
+
+                    <div class="collapse navbar-collapse nav-collapse">
+					
+					<!--div class="language-switcher">
+					  <ul class="nav-lang">
+                        <li><a class="active" href="#">EN</a></li>
+					    <li><a href="#">DE</a></li>
+						<li><a href="#">FR</a></li>
+					  </ul>
+					</div---> 
+					
+                        <div class="menu-container">
+                            <ul class="nav navbar-nav navbar-nav-right">
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="C:/ProjectGUN/Home.htm">Home</a></li>
+                                <li class="js_nav-item nav-item active"><a class="nav-item-child nav-item-hover" href="C:/ProjectGUN/AboutUs.htm">Team</a></li>
+		
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="C:/ProjectGUN/Plan.html">Plans</a></li>
+								
+                                
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="C:/ProjectGUN/ContactUs.htm">Contact</a></li>
+                            
+							</ul>
+		 <ul class="nav navbar-nav navbar-right">
+     <li>
+     <div class="dropdown-content">
+	 
+    <li><a href="C:/ProjectGun/ClientLog.htm"><span class="glyphicon glyphicon-user" dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">LogOut</span></a></li>
+  </div>
+      </li>
+      </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+			</h3>
+			</header>
+			<br><br><br><br>
+<div>
+ <table class="table table-striped">
+	<tr border="2px solid black">
+		<td>Plan Name:</td>
+		<td>Plan ID:</td>
+		<td>Speed:</td>
+		<td>Price:</td>
+		<td>Limit:</td>
+		<td>Validity:</td>
+ <td>
+	<a href="C:/ProjectGun/UpdatePlan.htm" class="btn btn-primary btn-block" data-toggle="modal" data-target="#insertPlan">Update Plan</a>
+ </td>
+ <td>
+	<a class="btn btn-primary btn-block">Delete Plan</a>
+ </td>
+ </tr>
+ </table>
+ </div>
+
+<div class="container">
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#insertPlan">Insert Plan</button>
+  <div class="modal fade" id="insertPlan" role="dialog">
+    <div class="modal-dialog">
+   
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Insert Plan Details:</h4>
+        </div>
+<div class="modal-body" >
+<div class="container">     
+  <form action="" id="loginForm" name="loginForm">
+          <div class="form-group input-group">
+      <label for="planName">Plan Name:</label>
+      <input type="planName" class="form-control" id="planName" placeholder="Enter Plan Name" name="planName" ><span id="errPlanName"></span>
+    </div>
+	
+	<div class="form-group input-group">
+      <label for="planId" >Plan Id:</label>
+      <input type="planId" class="form-control" id="planId" placeholder="Enter Plan Id" name="planId">
+    </div>
+	
+	<div class="form-group input-group">
+      <label for="speed">Speed:</label>
+      <input type="speed" class="form-control" id="speed" placeholder="Enter speed" name="speed">
+    </div>
+
+	<div class="form-group input-group">
+      <label for="price">Price:</label>
+      <input type="price" class="form-control" id="price" placeholder="Enter Price" name="price">
+    </div>
+	
+	<div class="form-group input-group">
+      <label for="limit">Limit:</label>
+      <input type="limit" class="form-control" id="limit" placeholder="Enter Limit" name="limit">
+    </div>
+	
+	<div class="form-group input-group">
+      <label for="validity">Validity:</label>
+      <input type="validity" class="form-control" id="validity" placeholder="Enter Validity" name="validity">
+    </div>
+	
+	<div class="col-xs-3">
+	<a href="C:/ProjectGun/update1.html" class="btn btn-primary btn-block" >UpdatePlan</a>
+	</div>
+  </form>
+  </div>      
+  </div>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+	    <!-- Footer -->
+    <footer class="py-5 bg-inverse">
+        <div class="container">
+		     <div class="col-md-6 col-sm-12 col-xs-12">
+                <a href="C:/ProjectGun/T&C.html" target="_blank">Terms and Conditions</a>
+ 				<a href="#">Buy Now</a>
+                <a href="#">Cart</a>
+ 				<a href="#">Feedback</a>
+                <a href="C:/ProjectGun/ContactUs.htm"> Contact Us</a>
+            </div>
+            <p class="m-0 text-center text-white">Copyright © 2017 by GetYourNet Pvt Ltd All rights reserved</p>
+        </div>
+    </div>
+    </footer>
+  </body>
+  </html>

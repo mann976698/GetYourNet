@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>User Registration</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  <link href="User.css" rel="stylesheet" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="Cl.css" rel="stylesheet"></link>
+</head>
+<body>
+<h3>
+<body id="body" data-target=".header">
+          <header class="header navbar-fixed-top">
+              <nav class="navbar" role="navigation">
+                <div class="container">
+                      <div class="menu-container js_nav-item">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
+
+                          <!--<div class="logo">
+                            <a class="logo-wrap" href="#body">
+                                <img class="logo-img logo-img-main" src="log_burned.png" alt="FlameOnePage Logo">
+                                
+                            </a>
+                        </div>-->
+                    </div>
+
+                    <div class="collapse navbar-collapse nav-collapse">
+					
+					<!--div class="language-switcher">
+					  <ul class="nav-lang">
+                        <li><a class="active" href="#">EN</a></li>
+					    <li><a href="#">DE</a></li>
+						<li><a href="#">FR</a></li>
+					  </ul>
+					</div---> 
+					
+                        <div class="menu-container">
+                            <ul class="nav navbar-nav navbar-nav-right">
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="C:/ProjectGun/Home.htm">Home</a></li>
+                                <li class="js_nav-item nav-item active"><a class="nav-item-child nav-item-hover" href="C:/ProjectGUN/AboutUs.htm">Team</a></li>
+		
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="C:/ProjectGun/Plan.html">Plans</a></li>
+								
+                                
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="C:/ProjectGun/ContactUs.htm">Contact</a></li>
+                            
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+	
+    <li><a href="C:/ProjectGun/ClientLog.htm"><span class="glyphicon glyphicon-user" dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">LogOut</span></a></li>
+	
+      </ul>
+    </div>
+  </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+			</h3>
+			</header>
+
+<!-- Use any element to open the sidenav -->
+<div id="main">
+		<div class="container">
+		<div class="row">
+			<div class="col-sm-8" style="color:red">
+				<h1> Client Name</h1>
+			</div>
+		</div>
+		<div class="panel panel-default" >
+			<div class="panel-heading"  style="color:red">Notifications</div>
+			<div class="panel-body">Hello this user have requested a connection</div>
+		</div>
+		<br><br><br><br><br><br><br><br>
+		 <div class="row">
+				<div class="Absolute-Center is-Responsive"> 
+						  <div class="col-lg-12">
+							<a href="C:/ProjectGun/update1.html" class="btn btn-primary btn-block">Let Me decide My Plans!</a>
+						  </div>
+				</div>
+		 </div>
+	</div>
+</div>
+		<div class="col-sm-9">
+				<ul class="nav nav-tabs" id="myTab"  style="color:red">
+					<li class="active"><a href="#customers" data-toggle="tab">Customers</a></li>
+						<li><a href="#customerss" data-toggle="tab">Customers Strength</a></li>
+					<li><a href="#notifications" data-toggle="tab">Notifications</a></li>
+					<li><a href="#editprofile" data-toggle="tab">Edit Profile</a></li>
+				</ul>
+			<div class="tab-content">
+					<div class="tab-pane active" id="customers">
+						<div class="table-responsive">
+							<table class="table table-hover">
+								<thead>
+									<tr style="color:red">
+										<th>#</th>
+										<th>Label 1</th>
+										<th>Label 2</th>
+										<th>Label 3</th>
+									</tr>
+								</thead>
+								<tbody id="items">
+									<tr class="success">
+										<td>1</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+									</tr>
+									<tr  class="danger">
+										<td>2</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+									</tr>
+									<tr  class="info">
+										<td>3</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+									</tr>
+								</tbody>
+							</table>
+							
+							
+						</div>
+						<hr>
+					</div>
+					<div class="tab-pane" id="customerss">
+					<h4  style="color:red">Customers Strength</h4>
+						<div class="table-responsive"  style="color:red">
+							<table class="table table-hover">
+								<tbody>
+									<tr>
+										<td><i class="pull-right fa fa-edit"></i> Got boosters in this month</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="tab-pane" id="notifications"  style="color:red">
+						<h2  style="color:red">Notifications</h2>
+						<ul class="list-group"  style="color:red">
+							<li class="list-group-item text-muted"  style="color:red">Inbox</li>
+							<li class="list-group-item text-right"  style="color:red"><a href="#" class="pull-left">You got customer of 30GB plan activated..</a> 15.7.2017</li>
+							<li class="list-group-item text-right"  style="color:red"><a href="#" class="pull-left">You got customer of 15GB plan activated..</a> 15.6.2017</li>
+						</ul>
+					</div>
+				<div class="tab-pane" id="editprofile"  style="color:red">
+					<h4>Edit Profile</h4>
+					
+					<form class="form" action="##" method="post" id="loginForm">
+							
+							
+							
+							<div class="form-group">
+								<div class="col-xs-6">
+									<label for="name"><h4>Name</h4></label>
+									<input type="name" class="form-control" name="name" id="name" placeholder="name" title="enter your first name if any.">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-xs-6">
+									<label for="email"><h4>Email</h4></label>
+									<input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+								</div>
+							</div>
+
+							
+							<div class="form-group">
+								<div class="col-xs-6">
+									<label for="address"><h4>Address</h4></label>
+									<input type="address" class="form-control" id="address" placeholder="address" title="enter a address">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-xs-6">
+									<label for="city"><h4>City:</h4></label>
+									<input type="city" class="form-control" id="city" placeholder="city" title="enter a city">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-xs-6">
+									<label for="state"><h4>State:</h4></label>
+									<input type="state" class="form-control" id="state" placeholder="state" title="enter a state">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-xs-6">
+									<label for="pincode"><h4>Pin Code:</h4></label>
+									<input type="pincode" class="form-control" id="pincode" placeholder="pincode" title="enter a pincode">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-xs-6">
+									<label for="registration"><h4>Registration No:</h4></label>
+									<input type="registration" class="form-control" id="registration" placeholder="registration" title="enter a registration">
+								</div>
+							</div>
+							
+							
+							<div class="form-group">
+								<div class="col-xs-6">
+									<label for="password"><h4>Password</h4></label>
+									<input type="password" class="form-control" name="password" id="password" placeholder="password" title="enter your password.">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-xs-6">
+									<label for="password2"><h4>Verify</h4></label>
+									<input type="password" class="form-control" name="password2" id="password2" placeholder="password2" title="enter your password2.">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-xs-12">
+									<br>
+									<button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+									<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+								</div>
+							</div>
+
+						</form>
+					
+				</div>
+			</div>
+			</div>
+<script src="Cl.js"></script>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+	<footer class="py-5 bg-inverse">
+        <div class="container">
+		    <div class="col-md-6 col-sm-12 col-xs-12">
+                <a href="C:/ProjectGun/T&C.html" target="_blank">Terms and Conditions</a>
+ 				<a href="C:/ProjectGun/feedback.html">Feedback</a>
+                <a href="C:/ProjectGun/ContactUs.htm"> Contact Us</a>
+            </div>
+            <p class="m-0 text-center text-white">Copyright © 2017 by GetYourNet Pvt Ltd All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
