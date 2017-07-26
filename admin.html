@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="User.css" rel="stylesheet" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+  </style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<span class="glyphicon glyphicon-bookmark"></span> Quick Shortcuts</h3>
+					</div>
+			<div class="col-sm-9">
+					<ul class="nav nav-tabs" id="myTab">
+						<li class="active"><a href="#activity" data-toggle="tab">Activity</a></li>
+						<li><a href="#comments" data-toggle="tab">Comments</a></li>
+					</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="activity">
+						<div class="table-responsive">
+							<table class="table table-hover">
+								<thead>
+									<tr style="color:red">
+										<th>#</th>
+										<th>ISP Name</th>
+										
+										<th>No of Plans</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody id="items">
+									<tr class="success">
+										<td>1</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+									</tr>
+									<tr  class="danger">
+										<td>2</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+									</tr>
+									<tr  class="info">
+										<td>3</td>
+										<td>Table cell</td>
+										<td>Table cell</td>					
+									</tr>
+								</tbody>
+							</table>
+						</div>		
+					</div>
+					<div class="tab-pane" id="comments">
+							<h2>Comments</h2>
+							<div class="table-responsive">
+							<table class="table table-hover">
+								<thead>
+									<tr style="color:red">
+										<th>#</th>
+										<th>Customer Name</th>
+										<th>Email of Customers</th>
+										<th>Subject</th>
+										<th>Comments</th>
+									</tr>
+								</thead>
+								<tbody id="items">
+									<tr class="success">
+										<td>1</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+									</tr>
+									<tr  class="danger">
+										<td>2</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+									</tr>
+									<tr  class="info">
+										<td>3</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>	
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-12 col-xs-12">
+							  <a href="C:/ProjectGun/ClientReg.htm" class="btn btn-success btn-lg" role="button"><span class="glyphicon glyphicon-user"></span> <br/>Activate ISP</a>
+							  <a href="#" class="btn btn-danger btn-lg" role="button"><span class="glyphicon glyphicon-list-alt"></span> <br/>Deactivate ISP</a>
+							</div>
+						</div>
+						<br>
+						<a href="https://www.payumoney.com/merchant/stats/#/" class="btn btn-success btn-lg btn-block" role="button"><span class="glyphicon glyphicon-globe"</span> Payment Details</a>
+						<a href="C:/ProjectGUN/Home.htm" class="btn btn-success btn-lg btn-block" role="button"><span class="glyphicon glyphicon-globe"</span> GetYourNet Website</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
